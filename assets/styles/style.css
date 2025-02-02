@@ -1,0 +1,17 @@
+:root {
+  --background: #0d1521;
+  --primary: #1c7bff;
+  --accent-gold: #e5b80b;
+  --accent-fire: #ff6b35;
+  --cyan-highlight: #6addff;
+  --text-primary: #f0f4fc;
+  --text-secondary: #8c9ba5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #000000;
+    /* Smooth scroll behavior */
+    scroll-behavior: smooth;
+}
