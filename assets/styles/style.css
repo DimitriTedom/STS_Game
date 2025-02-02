@@ -19,6 +19,7 @@
 body {
   font: 10px "ICA Rubrik";
   background-color: var(--background);
+  overflow-x: hidden;
 }
 .container {
   color: var(--text-primary);
@@ -240,7 +241,11 @@ header {
   text-align: center;
   line-height: 2.5rem;
 }
-
+.stones{
+  position: absolute;
+  margin-top: 22%;
+  width: 50rem;
+}
 .info {
   display: flex;
   flex-direction: column;
@@ -474,7 +479,7 @@ header {
   font-size: 1.2rem;
 }
 .footer i{
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 .footer ul{
   display: flex;
@@ -549,5 +554,74 @@ header {
   }to{
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@media screen and (max-width: 650px){
+  header{
+    padding: 0 10px;
+  }
+  .head-left button{
+    display: none;
+  }
+  .head-right a{
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+  }
+  .hero-info{
+    left: 5%;
+  }
+  .hero h1{
+    font-size: 9rem;
+  }
+  .next-btn{
+    left: 25%;
+    top: 40%;
+  }
+  .about{
+    margin: 0;
+  }
+  .about h1{
+    font-size: 5rem;
+  }
+  .image-container{
+    width: 30rem;
+    height: 50rem;
+  }
+  .about h4, .about h5{
+    max-width: 35rem;
+    text-align: center;
+  }
+  .stones{
+    margin-top: 80%;
+    width: 40rem;
+  }
+  .contact .img1{
+    width: 15rem;
+    height: 20rem;
+    right: 0;
+    top: 2rem;
+  }
+  .contact .img2{
+    top: 3rem;
+    left: -4rem;
+    width: 15rem;
+    height: 18rem;
+  }
+  .contact .img3{
+    left: -4rem;
+    bottom: 0;
+    width: 15rem;
+    height: 18rem; 
+  }
+  .contact h1{
+    font-size: 6rem;
+    max-width: 30rem;
+  }
+  .footer p{
+    display: none;
+  }
+  .footer ul{
+    margin-left: 7rem;
   }
 }
