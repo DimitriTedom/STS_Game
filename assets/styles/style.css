@@ -59,7 +59,7 @@ header {
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 1,2rem;
+  font-size: 1rem;
 }
 
 .head-left button:hover {
@@ -168,5 +168,42 @@ header {
     width: 20rem;
     height: 20rem;
     opacity: 1;
-    box-shadow: 0 0 1.5rem var(--accent-gold);
+    box-shadow: 0 0 1.5rem white;
+}
+
+.about{
+    height: 100%;
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-primary);
+}
+
+.image-container{
+    width: 30rem;
+    height: 41rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about p{
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900;
+}
+
+.about h1{
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-weight: 900;
+  font-size: 2rem;
 }
