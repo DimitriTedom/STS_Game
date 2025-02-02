@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
 :root {
   --background: #0d1521;
   --primary: #1c7bff;
@@ -7,11 +8,71 @@
   --text-primary: #f0f4fc;
   --text-secondary: #8c9ba5;
 }
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: #000000;
-    /* Smooth scroll behavior */
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  /* Smooth scroll behavior */
+  scroll-behavior: smooth;
+}
+body {
+  font: 10px "ICA Rubrik";
+  background-color: var(--background);
+}
+.container {
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+header {
+  position: absolute;
+  /* inset: 0 0 0 0; */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  z-index: 999;
+  background-color: #4b4b4b5b;
+  backdrop-filter: blur(1rem);
+}
+
+.head-left {
+  display: flex;
+  align-items: center;
+}
+.head-left img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+}
+
+.head-left button {
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1,2rem;
+}
+
+.head-left button:hover {
+  opacity: 0.7;
+}
+
+.head-right {
+  display: flex;
+}
+
+.head-right a {
+  text-decoration: none;
+  padding-left: 2.5rem;
+  color: var(--text-primary);
+  font-size: 1.3rem;
 }
