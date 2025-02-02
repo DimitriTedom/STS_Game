@@ -76,3 +76,97 @@ header {
   color: var(--text-primary);
   font-size: 1.3rem;
 }
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-video-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hero-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-info{
+    position: absolute;
+    z-index: 1;
+    top: 8rem;
+    left: 5rem;
+}
+
+.hero-info h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12rem;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero-info  p{
+    color: white;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    max-width: 30rem;
+}
+
+.hero-info button{
+    background-color: var(--accent-gold);
+    border: 2px solid var(--accent-gold);
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem ;
+    transition: 0.3s;
+    margin-top: 1rem;
+}
+
+.hero-info button:hover{
+    background-color: transparent;
+    color: var(--text-primary);
+    box-shadow: 0 0 1.5rem var(--accent-gold);
+}
+
+.gaming-text{
+    font-size: 12rem;
+    margin: 0;
+    position: absolute;
+    right: 2rem;
+    bottom: 3rem;
+}
+
+.next-btn{
+    height: 20rem;
+    width: 20rem;
+    background-color: var(--accent-gold);
+    position: absolute;
+    left: 45%;
+    bottom: 45%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.next-btn:hover{
+    width: 20rem;
+    height: 20rem;
+    opacity: 1;
+    box-shadow: 0 0 1.5rem var(--accent-gold);
+}
