@@ -243,8 +243,8 @@ header {
 }
 .stones{
   position: absolute;
-  margin-top: 22%;
-  width: 50rem;
+  margin-top: 42%;
+  width: 5rem;
 }
 .info {
   display: flex;
@@ -557,7 +557,7 @@ header {
   }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width : 480px){
   header{
     padding: 0 10px;
   }
